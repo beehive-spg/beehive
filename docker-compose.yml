@@ -1,0 +1,40 @@
+version: '3'
+
+services:
+  redis:
+    image: redis
+    ports:
+    - "6379:6379"
+
+  rabbitmq:
+    image: rabbitmq:3.7.2-management
+    hostname: beehive-rabbit
+    ports:
+    - "15672:15672"
+    - "5672:5672"
+
+  beehive-database:
+    image: beehive-database:latest
+    ports:
+    - "4321:3000"
+
+  routing:
+    stdin_open: true
+    tty: true
+    image: langhaarzombie/beehive-routing
+    ports:
+    - "5671:5671"
+    depends_on:
+    - rabbitmq
+    - redis
+
+  backend:
+    image: astwys/beehive-backend
+    ports:
+    - "8080:8080"
+
+  frontend:
+    image: astwys/beehive-frontend
+    ports:
+    - "5000:5000"
+    env_file: .env_frontend
