@@ -13,3 +13,6 @@
 [submodule "routing"]
 	path = routing
 	url = git@github.com:beehive-spg/beehive-routing.git
+[submodule "generator"]
+	path = generator
+	url = git@github.com:beehive-spg/beehive-order-generator.git

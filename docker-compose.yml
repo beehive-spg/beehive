@@ -38,3 +38,9 @@ services:
     ports:
     - "5000:5000"
     env_file: .env_frontend
+
+  distribution:
+    image: dschonas/beehive-distribution
+
+  generator:
+    image: dschonas/beehive-generator
