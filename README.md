@@ -54,10 +54,14 @@ everyone.
 - [Frontend](https://hub.docker.com/r/astwys/beehive-frontend/)
 - [Backend](https://hub.docker.com/r/astwys/beehive-backend/)
 - [Routing Engine](https://hub.docker.com/r/langhaarzombie/beehive-routing/)
+- [Distribution](https://hub.docker.com/r/dschonas/beehive-distribution/)
+- [Generator](https://hub.docker.com/r/dschonas/beehive-generator/)
 
 ## Component Repository Links
 For details on how to interact with the individual components see the following links:
 - [Frontend](https://github.com/beehive-spg/beehive-frontend)
 - [Backend](https://github.com/beehive-spg/beehive-backend)
 - [Routing Engine](https://github.com/beehive-spg/beehive-routing)
+- [Distribution](https://github.com/beehive-spg/beehive-drone-distribution)
+- [Generator](https://github.com/beehive-spg/beehive-order-generator)
 - [Database](https://github.com/beehive-spg/beehive-database)
