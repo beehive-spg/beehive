@@ -36,7 +36,7 @@ docker build --build-arg username=<USERNAME> --build-arg password=<PASSWORD> -t 
 Replace ```<USERNAME>``` and ```<PASSWORD>``` with your [Datomic](https://my.datomic.com/login) account credentials.
 
 ### Frontend Environment Variables
-For the Frontend to work properly an evironment file is needed. It should be named
+For the Frontend to work properly an environment file is needed. It should be named
 ```.env_fronted``` and located in the main directory.
 
 The file content should look like this:
@@ -49,6 +49,15 @@ REACT_APP_GOOGLE_API_KEY=<GOOGLE_MAPS_GEOCODING_API_KEY>
 Replace ```<GOOGLE_MAPS_GEOCODING_API_KEY>``` with your own API key.
 The Mapbox access token can be left as is, as it's the default public token, which is available to
 everyone.
+
+### Generator Environment Variables
+The Generator also needs an environment file. Name it ```.env_generator``` and put the following
+content into it:
+
+```
+GOOGLE_API_KEY=<GOOGLE_MAPS_GEOCODING_API_KEY>
+```
+Replace ```<GOOGLE_MAPS_GEOCODING_API_KEY>``` with your own API key.
 
 ## Docker-Hub Links
 - [Frontend](https://hub.docker.com/r/astwys/beehive-frontend/)
