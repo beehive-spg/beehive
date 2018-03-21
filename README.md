@@ -18,9 +18,9 @@ After that the submodules have to be downloaded. This can be done by issuing the
 git submodule update --init --recursive
 ```
 
-The repository includes a ```docker-compose.yml``` file, which is starts up all containers needed
+The repository includes a ```docker-compose.yml``` file, which starts up all containers needed
 for Beehive to work properly. The Frontend, Backend, Routing and Generator images will all be pulled
-from docker-hub, only the database image will have to be built manually.
+from docker-hub, only the database image has to be built manually.
 
 ### Database Docker Image
 To build the database image the following commands will have to be executed:
@@ -42,6 +42,14 @@ and located in the main directory.
 GOOGLE_API_KEY=<GOOGLE_MAPS_GEOCODING_API_KEY>
 ```
 Replace ```<GOOGLE_MAPS_GEOCODING_API_KEY>``` with your own API key.
+
+### Start the Application
+
+After building the database image locally the docker-compose file can be started with:
+
+```
+docker-compose up
+```
 
 ## Docker-Hub Links
 - [Frontend](https://hub.docker.com/r/astwys/beehive-frontend/)
