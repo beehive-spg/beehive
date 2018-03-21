@@ -13,9 +13,11 @@ First of all clone the repository with:
 git clone https://github.com/beehive-spg/beehive.git
 ```
 
-After that the submodules have to be downloaded. This can be done by issuing the following command:
+After that the submodules have to be downloaded and checked out to the newest commit. This can be done by issuing the following commands:
 ```
 git submodule update --init --recursive
+
+get submodule update --recursive --remote
 ```
 
 The repository includes a ```docker-compose.yml``` file, which is starts up all containers needed
