@@ -37,7 +37,6 @@ services:
     image: astwys/beehive-frontend
     ports:
     - "5000:5000"
-    env_file: .env_frontend
 
   distribution_1:
     image: dschonas/beehive-distribution
