@@ -29,7 +29,7 @@ To build the database image the following commands will have to be executed:
 cd database
 
 # build beehive-database image
-docker build --build-arg username=<USERNAME> --build-arg password=<DOWNLOAD_KEY> -t beehive-database
+docker build --build-arg username=<USERNAME> --build-arg password=<DOWNLOAD_KEY> -t beehive-database .
 ```
 
 Replace ```<USERNAME>``` and ```<DOWNLOAD_KEY>``` with your [Datomic](https://my.datomic.com/login) email address and download key.
@@ -41,7 +41,7 @@ and located in the main directory.
 ```
 GOOGLE_API_KEY=<GOOGLE_MAPS_GEOCODING_API_KEY>
 ```
-Replace ```<GOOGLE_MAPS_GEOCODING_API_KEY>``` with your own API key.
+Replace ```<GOOGLE_MAPS_GEOCODING_API_KEY>``` with your own API key aquired from [here](https://developers.google.com/maps/documentation/geocoding/get-api-key).
 
 ### Start the Application
 
