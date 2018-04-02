@@ -1,0 +1,24 @@
+[submodule "frontend"]
+	path = frontend
+	url = git@github.com:beehive-spg/beehive-frontend.git
+	branch = develop
+[submodule "backend"]
+	path = backend
+	url = git@github.com:beehive-spg/beehive-backend.git
+	branch = develop
+[submodule "database"]
+	path = database
+	url = git@github.com:beehive-spg/beehive-database.git
+	branch = develop
+[submodule "distribution"]
+	path = distribution
+	url = git@github.com:beehive-spg/beehive-drone-distribution.git
+	branch = develop
+[submodule "routing"]
+	path = routing
+	url = git@github.com:beehive-spg/beehive-routing.git
+	branch = develop
+[submodule "generator"]
+	path = generator
+	url = git@github.com:beehive-spg/beehive-order-generator.git
+	branch = develop
